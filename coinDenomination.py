@@ -23,12 +23,6 @@ def __coinDenomination_greedy__ (denomination, w):
     print(frequency)
 
 
-def pr(w,d):
-    if (w - d <0):
-        return 0
-    else :
-        return w - d
-    
 
 def __coinDenomination_dynamic__ (denomination, w): 
     print ("Input\n \tDenominations:" + str(denomination) + "Weight: " + str(w))
@@ -54,7 +48,7 @@ def __coinDenomination_dynamic__ (denomination, w):
     print("total coins used :",weight[w])
     i = w
     while trace[i] !=0:
-        print trace[i],
+        print (trace[i], end= " ")
         i = i - trace[i]
   
 
